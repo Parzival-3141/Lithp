@@ -2,7 +2,7 @@
   "profiles": {
     "Lithp": {
       "commandName": "Project",
-      "commandLineArgs": "test.lisp"
+      "commandLineArgs": "..\\..\\..\\test.lisp"
     }
   }
 }
