@@ -6,8 +6,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="copy $(SolutionDir)\test.lisp $(TargetDir)" />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="mkdir $(ProjectDir)\build&#xD;&#xA;copy $(TargetDir)\* $(ProjectDir)\build\*" />
   </Target>
 
 </Project>
